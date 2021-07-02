@@ -1,0 +1,42 @@
+#main{
+    background-color: #EEEEEE;
+    text-align: center;
+    color:#333333;
+    Display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+#title{
+    padding:3rem;
+    color:#333333;
+  margin:1px;
+}
+ #main h3{
+     padding:0px;
+     margin-top: 0px;
+     color:#333333;
+}
+#img-div{
+    background-color: white;
+    width:90%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:0.5rem 1rem 1rem 1rem;
+}
+#image{
+    width:90%;
+}
+#tribute-info{
+    
+    padding:1rem;
+    max-width: 36rem;
+    
+}
+#tribute-info ul{
+    text-align: start;
+}
+li{
+    padding:0.5rem;
+    font-size:15px;
+}
