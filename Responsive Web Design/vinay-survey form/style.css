@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+body{
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    font-size: 1rem;
+  font-weight: 405;
+  line-height: 1.5;
+background:url(https://wallpapercave.com/wp/wp4866276.jpg
+) fixed  no-repeat center;
+font-family: 'Poppins', sans-serif;
+font-size: 1rem;
+font-weight: 400;
+    color:white;
+}
+/** images links 
+https://wallpapercave.com/wp/wp4943546.jpg
+https://wallpapercave.com/wp/wp7718462.jpg
+https://wallpapercave.com/wp/wp4866276.jpg
+https://wallpapercave.com/wp/wp5394632.jpg
+https://wallpapercave.com/wp/wp3431671.jpg
+
+
+
+https://wallpapercave.com/wp/wp1810645.jpg
+https://wallpapercave.com/wp/wp1810647.jpg
+
+**/
+
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+
+
+input{
+    border:0px none;
+    border-bottom: 2px solid rgb(0, 89, 255);
+    border-radius: 0.3rem;
+}
+#email:valid{
+    border-bottom:2px solid springgreen;
+}
+#email::before{
+    border-bottom: 2px solid rgb(98, 0, 255);
+
+}
+#survey-form{
+    display: flex;
+    flex-direction: column;
+    padding:1rem;
+    background-color: rgba(37, 20, 36, 0.8);
+    min-width: 17rem;
+    width:90%;
+    max-width: 40rem;
+    border-radius:2rem;
+}
+label{
+    padding:10px;
+    padding-left: 0px;
+}
+.options-elements{
+    display:flex;
+}
+.form-element{
+   padding:0.6rem;
+    display:grid;
+}
+textarea{
+    border-radius: 1rem;
+}
+button{
+    background-color: rgb(96, 218, 255);
+    border:none;
+    border-radius: 1rem;
+    height:2rem;
+    max-width:10rem;
+    min-width:5rem;
+
+}
+
+
+.btn-element{
+    align-self: center;
+}
+button:hover{
+    background-color: rgb(138, 96, 255);
+}

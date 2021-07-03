@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet" />
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="title"  >Become Avenger</h1>
+    <p id="description"> Path Towards Greatness</p>
+    <form id="survey-form" action="#">
+
+        <div class="form-element">
+             <label id="name-label" for="name"> Your Avenger Name</label>
+             <input type="text" id="name" placeholder="e.g Iron Man" required>
+        </div>
+
+        <div class="form-element"> 
+            <label id="email-label" for="email">Enter Email</label> 
+            <input type="email"placeholder="e.g Tony@avenger.com" pattern=".+@.+\..+"id="email" name="email" required>
+        </div>
+ 
+ 
+        <div class="form-element">
+            <label id="number-label" for="number">Rate Your Powers</label> 
+            <input id="number" placeholder="Between 1-100" type="number" min="1" max="100" required>
+        </div>
+
+        <div class="form-element"> 
+            <label>Your Super Power</label>
+            <select name="role" id="dropdown" required>
+                <option disabled selected value>Select Your Powers</option>
+                <option value="Captain"> Nice and disciplined(with ability to throw something preferred)</option>
+                <option value="Thor">Son of God (Nepotism Quota)</option>
+                <option value="Ironman">Billionaire && Genius</option>
+                
+                <option value="Groot">I Am Groot</option>
+                <option value="others">Others</option>
+
+
+            </select>
+        </div>
+        
+        
+        <div class="form-element">
+            <label>Gender</label>
+            <div>
+                <label class="options-elements"> <input type="radio" value="male" name="gender" checked> male </label>
+                <label class="options-elements"> <input type="radio" value="female" name="gender"> female </label>
+                <label class="options-elements"> <input type="radio" name="gender" value="others"> others </label>
+                <label class="options-elements"> <input type="radio" name="gender" value="Groot"> I Am Groot</label>
+
+
+            </div>
+        </div>
+
+
+        <div class="form-element"> 
+            <label>Favourite Retired Heros</label>
+            <div>
+
+                <label class="options-elements"><input type="checkbox" value="iron">Iron Man </label>
+                <label class="options-elements"><input type="checkbox" value="captain">Captain America </label>
+                <label class="options-elements"><input type="checkbox" value="thor">Thor </label>
+                <label class="options-elements"><input type="checkbox" value="widow">Black Widow </label>
+               
+
+
+
+            </div>
+        </div>
+
+        <div class="form-element">
+             <textarea id="textarea" placeholder="Tell Us About Yourself!!!"></textarea>
+        </div>
+        
+        
+        <div class="form-element btn-element"> 
+            <button id="submit" type="submit">save</button>
+        </div>
+
+
+    </form>
+</body>
+
+</html>
