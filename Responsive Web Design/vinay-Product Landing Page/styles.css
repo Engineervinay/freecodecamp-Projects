@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+    padding:0rem;
+    margin:0px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color:#1d1d1f;
+    font-family: 'Poppins', sans-serif;
+}
+#header{
+    display:flex;
+    position: fixed;
+    background-color:#000000f1;
+    width:100%;
+    color:#d0d0cf;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 3rem;
+    height:3rem;
+    top:0;
+    padding-right: 1rem;
+
+}
+
+#main{
+    max-width:30rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.red-apple{
+    max-width:15rem;
+}
+a{
+    text-decoration: none;
+    
+}
+#header-img{
+    width:25px;
+padding-left:1rem;
+}
+#nav-bar{
+color:white;       
+}
+#nav-bar a{
+    color:white;
+}
+ul{
+    display: flex;
+    
+    list-style-type: none;
+}
+li{
+   padding:1rem;
+    
+}
+#whatIs{
+    margin-top: 5rem;
+    text-align: center; 
+
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+}
+#email{
+margin:auto;
+border: 2px solid #141414;
+border-radius: 0.5rem;
+line-height: 1.5rem;
+}
+#submit{
+    background-color: white;
+    border:3px solid #141414;
+    border-radius: 3rem;
+    cursor: pointer;
+    height: 2rem;
+    width:8rem;
+    margin:1rem;
+    box-shadow:6px 6px 1px 0.5px rgba(0, 0, 255, .2);
+}
+#submit:hover{
+    animation-name: btn-hover;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+
+}
+@keyframes btn-hover{
+    100%{
+        background-color:#141414 ;
+        color:#f5f5f7;
+                
+    }
+}
+
+iframe{
+    box-shadow:12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+#pricing{
+    display:flex;
+   gap:1rem;
+   margin:2rem;
+}
+
+.card{
+    border:2px solid #141414;
+    width:10rem;
+    height: 15rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    box-shadow:6px 6px 1px 0.5px rgba(0, 0, 255, .2);
+}
+.card:hover{
+    animation-name: card-hover;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    
+}
+.card img{
+    width:95%;
+    align-self: center;
+    padding-top:1%;
+}
+@keyframes card-hover{
+    100%{
+        background-color:#141414 ;
+        color:#f5f5f7;
+    box-shadow:12px 12px 2px 1px rgba(0, 0, 255, .2);
+       
+    }
+}
+
+
+
+@media(max-width:550px) {
+    #header{
+        flex-direction: column;
+
+    }
+    #header h1{
+            overflow:hidden;
+    }
+    iframe{
+        width:20rem;
+        height:10rem;
+    }
+    #nav-bar{
+        overflow:hidden;
+    }
+    
+    ul{
+        flex-direction: column;
+    }
+    #pricing{
+        flex-direction: column;
+    }
+}
